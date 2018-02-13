@@ -56,9 +56,9 @@ neighbor_list  	  =0
 distance_neighbors=1e10
 is_for_neigh_list=.true.
 
-!!call omp_set_num_threads(6)
-!!$OMP PARALLEL 
-!!$OMP DO PRIVATE(i, j, i_cell,ii,indx, jj, kk, indd, k, Gab_min, flag, m, ghost_hingeA, ghost_hingeB)
+call omp_set_num_threads(6)
+$OMP PARALLEL 
+!$OMP DO PRIVATE(i, j, i_cell,ii,indx, jj, kk, indd, k, Gab_min, flag, m, ghost_hingeA, ghost_hingeB)
 do i=1, ubound (fibers,1)
     !print *, "Find 6"
 	do j=fibers(i)%first_hinge, fibers(i)%first_hinge+fibers(i)%nbr_hinges-2
@@ -132,7 +132,7 @@ do i=1, ubound (fibers,1)
     end do
 end do
 !!$OMP END DO
-!!$OMP END PARALLEL
+$OMP END PARALLEL
 
 !do i=1, ubound(hinges,1)
 !	print *,"hinge", i, neighbor_list(i,1:6)
