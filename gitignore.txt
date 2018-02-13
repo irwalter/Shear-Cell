@@ -1,0 +1,4 @@
+*.dll
+*.in
+*.out
+*.txt
