@@ -1,7 +1,0 @@
-*.dll
-*.in
-*.out
-*.txt
-*.suo
-*.vfproj
-*.obj
