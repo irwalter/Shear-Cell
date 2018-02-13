@@ -35,7 +35,7 @@
 				<Tool Name="VFPostBuildEventTool"/>
 				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
 		<Configuration Name="Release|x64" TargetName="Mechanistic Model Fortran">
-				<Tool Name="VFFortranCompilerTool" AdditionalOptions="-fpp" SuppressStartupBanner="true" Parallelization="true" GapAnalysis="gaSimple" GapEmitToFile="true" UseMkl="mklParallel"/>
+				<Tool Name="VFFortranCompilerTool" AdditionalOptions="-fpp, -Qparallel" SuppressStartupBanner="true" Parallelization="true" GapEmitToFile="true" UseMkl="mklParallel"/>
 				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" SubSystem="subSystemConsole"/>
 				<Tool Name="VFResourceCompilerTool"/>
 				<Tool Name="VFMidlTool" SuppressStartupBanner="true" TargetEnvironment="midlTargetAMD64"/>

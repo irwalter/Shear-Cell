@@ -2,3 +2,6 @@
 *.in
 *.out
 *.txt
+*.suo
+*.vfproj
+*.obj
